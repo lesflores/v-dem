@@ -1,5 +1,7 @@
 #--------------------------------------------------------------------------------
-# Descargar datos de V-Dem y agruparlos por continente creando una nueva variable
+# Descargar datos de V-Dem y agruparlos por continente 
+# creando una nueva variable
+# Profesora: Lesly Flores
 #--------------------------------------------------------------------------------
 
 # Instala el paquete devtools y luego usa la función install_github() para descargar 
@@ -29,3 +31,4 @@ vdem$continent <- countrycode(vdem$country_name, "country.name", "continent")
 
 # Ver los países con su continente
 unique(vdem[, c("country_name", "continent")])
+
